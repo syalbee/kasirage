@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/dist/css/adminlte.min.css">
+
+    <!-- Buat datatable-->
+    <!-- DATATABLES BS 4-->
+    <link rel="stylesheet" href="<?= base_url(); ?>/assets/dist/datatable/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="<?= base_url(); ?>/assets/dist/datatable/responsive.bootstrap4.min.css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="<?= base_url(); ?>/assets/dist/datatable/jquery.js"></script>
+    <script src="<?= base_url(); ?>/assets/dist/datatable/bootstrap.min.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">

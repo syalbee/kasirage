@@ -24,9 +24,9 @@ class Admin extends CI_Controller
         $data['title'] = 'Dashboard Admin';
         $data['nama'] = 'Admin Pemilik Toko';
         $this->load->view('admin/header', $data);
-        $this->load->view('admin/sidebar');
-        $this->load->view('admin/dashboard', $data);
-        $this->load->view('admin/footer');
+        // $this->load->view('admin/sidebar');
+        $this->load->view('admin/barang');
+        // $this->load->view('admin/footer');
     }
 
     public function laporan($pilih)
