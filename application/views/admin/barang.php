@@ -26,7 +26,7 @@
                      <div class="container mt-5 mb-5">
                          <div class="card">
                              <div class="card-header">
-                                 <h4> SQL Query With Join (CSRF)</h4>
+                                 <h4> Tabel Barang </h4>
                              </div>
 
                              <div class="card-body">
@@ -44,8 +44,23 @@
                                      </thead>
                                      <tbody>
                                          <!-- ini isi tabele -->
+                                         <?php
+                                            $i = 1;
+                                            foreach ($barangs as $barang) : ?>
+                                             <tr>
+                                                 <th> <?= $i++; ?></th>
+                                                 <td><?= $barang['kode_barang']; ?></td>
+                                                 <td><?= $barang['nama_barang']; ?></td>
+                                                 <td><?= $barang['harga_asli']; ?></td>
+                                                 <td><?= $barang['harga_grosir']; ?></td>
+                                                 <td><?= $barang['harga_biasa']; ?></td>
+                                                 <td><?= $barang['keterangan']; ?></td>
+                                             </tr>
+                                         <?php endforeach; ?>
                                      </tbody>
                                  </table>
+
+                                 <?= $this->paginitaion->create_links(); ?>
                              </div>
 
                          </div>
